@@ -1,7 +1,120 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A collection of Assaf's favorite recipes.">
+    <title>Assaf's Recipe Collection</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background: #f8b400;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            background: #444;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+        .recipe {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            overflow: hidden;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .recipe img {
+            width: 100%;
+            height: auto;
+        }
+        .recipe-content {
+            padding: 15px;
+        }
+        .recipe-content h2 {
+            margin: 0 0 10px;
+        }
+        .recipe-content p {
+            margin: 0 0 10px;
+        }
+        footer {
+            background: #444;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+    <header>
+        <h1>Assaf's Recipe Collection</h1>
+        <p>Delicious recipes for every occasion</p>
+    </header>
+    <nav>
+        <a href="#breakfast">Breakfast</a>
+        <a href="#lunch">Lunch</a>
+        <a href="#dinner">Dinner</a>
+        <a href="#desserts">Desserts</a>
+    </nav>
+    <div class="container">
+        <div class="recipe" id="breakfast">
+            <img src="path-to-your-breakfast-image.jpg" alt="Breakfast Recipe">
+            <div class="recipe-content">
+                <h2>Classic Pancakes</h2>
+                <p>A quick and easy pancake recipe perfect for breakfast.</p>
+                <a href="recipe1.html">View Recipe</a>
+            </div>
+        </div>
+        <div class="recipe" id="lunch">
+            <img src="path-to-your-lunch-image.jpg" alt="Lunch Recipe">
+            <div class="recipe-content">
+                <h2>Grilled Cheese Sandwich</h2>
+                <p>A gooey and delicious grilled cheese sandwich.</p>
+                <a href="recipe2.html">View Recipe</a>
+            </div>
+        </div>
+        <div class="recipe" id="dinner">
+            <img src="path-to-your-dinner-image.jpg" alt="Dinner Recipe">
+            <div class="recipe-content">
+                <h2>Spaghetti Carbonara</h2>
+                <p>A creamy and comforting pasta dish.</p>
+                <a href="recipe3.html">View Recipe</a>
+            </div>
+        </div>
+        <div class="recipe" id="desserts">
+            <img src="path-to-your-dessert-image.jpg" alt="Dessert Recipe">
+            <div class="recipe-content">
+                <h2>Chocolate Brownies</h2>
+                <p>Rich and fudgy brownies to satisfy your sweet tooth.</p>
+                <a href="recipe4.html">View Recipe</a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Assaf's Recipes. All rights reserved.</p>
+    </footer>
 </body>
 </html>
