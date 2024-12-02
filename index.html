@@ -5,116 +5,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="A collection of Assaf's favorite recipes.">
     <title>Assaf's Recipe Collection</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            color: #333;
-        }
-        header {
-            background: #f8b400;
-            color: #fff;
-            padding: 20px 0;
-            text-align: center;
-        }
-        nav {
-            background: #444;
-            color: #fff;
-            display: flex;
-            justify-content: center;
-            padding: 10px 0;
-        }
-        nav a {
-            color: #fff;
-            margin: 0 15px;
-            text-decoration: none;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        .container {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-        }
-        .recipe {
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            margin-bottom: 20px;
-            overflow: hidden;
-            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-        }
-        .recipe img {
-            width: 100%;
-            height: auto;
-        }
-        .recipe-content {
-            padding: 15px;
-        }
-        .recipe-content h2 {
-            margin: 0 0 10px;
-        }
-        .recipe-content p {
-            margin: 0 0 10px;
-        }
-        footer {
-            background: #444;
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
-            margin-top: 20px;
-        }
-    </style>
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    <header>
+    <!-- Header -->
+    <header class="bg-warning text-white text-center py-4">
         <h1>Assaf's Recipe Collection</h1>
         <p>Delicious recipes for every occasion</p>
     </header>
-    <nav>
-        <a href="#breakfast">Breakfast</a>
-        <a href="#lunch">Lunch</a>
-        <a href="#dinner">Dinner</a>
-        <a href="#desserts">Desserts</a>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Recipes</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="breakfast.html">Breakfast</a></li>
+                    <li class="nav-item"><a class="nav-link" href="lunch.html">Lunch</a></li>
+                    <li class="nav-item"><a class="nav-link" href="dinner.html">Dinner</a></li>
+                    <li class="nav-item"><a class="nav-link" href="desserts.html">Desserts</a></li>
+                </ul>
+            </div>
+        </div>
     </nav>
-    <div class="container">
-        <div class="recipe" id="breakfast">
-            <img src="path-to-your-breakfast-image.jpg" alt="Breakfast Recipe">
-            <div class="recipe-content">
-                <h2>Classic Pancakes</h2>
-                <p>A quick and easy pancake recipe perfect for breakfast.</p>
-                <a href="recipe1.html">View Recipe</a>
+
+    <!-- Main Content -->
+    <div class="container my-5">
+        <h2 class="text-center mb-4">Featured Recipes</h2>
+        <div class="row">
+            <!-- Recipe Cards -->
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <img src="path-to-your-breakfast-image.jpg" class="card-img-top" alt="Classic Pancakes">
+                    <div class="card-body">
+                        <h5 class="card-title">Classic Pancakes</h5>
+                        <p class="card-text">A quick and easy pancake recipe perfect for breakfast.</p>
+                        <a href="breakfast.html" class="btn btn-primary">View Recipe</a>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="recipe" id="lunch">
-            <img src="path-to-your-lunch-image.jpg" alt="Lunch Recipe">
-            <div class="recipe-content">
-                <h2>Grilled Cheese Sandwich</h2>
-                <p>A gooey and delicious grilled cheese sandwich.</p>
-                <a href="recipe2.html">View Recipe</a>
-            </div>
-        </div>
-        <div class="recipe" id="dinner">
-            <img src="path-to-your-dinner-image.jpg" alt="Dinner Recipe">
-            <div class="recipe-content">
-                <h2>Spaghetti Carbonara</h2>
-                <p>A creamy and comforting pasta dish.</p>
-                <a href="recipe3.html">View Recipe</a>
-            </div>
-        </div>
-        <div class="recipe" id="desserts">
-            <img src="path-to-your-dessert-image.jpg" alt="Dessert Recipe">
-            <div class="recipe-content">
-                <h2>Chocolate Brownies</h2>
-                <p>Rich and fudgy brownies to satisfy your sweet tooth.</p>
-                <a href="recipe4.html">View Recipe</a>
+
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <img src="path-to-your-lunch-image.jpg" class="card-img-top" alt="Grilled Cheese Sandwich">
+                    <div class="card-body">
+                        <h5 class="card-title">Grilled Cheese Sandwich</h5>
+                        <p class="card-text">A gooey and delicious grilled cheese sandwich.</p>
+                        <a href="lunch.html" class="btn btn-primary">View Recipe</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <footer>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
         <p>&copy; 2024 Assaf's Recipes. All rights reserved.</p>
     </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
