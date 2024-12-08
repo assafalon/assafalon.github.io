@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Recipe for Classic Pancakes">
+    <title>Granola - Assaf's Recipes</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="bg-warning text-white text-center py-4">
+        <h1>Granola</h1>
+    </header>
+    <!-- Navigation Bar -->
+    <div id="navbar-placeholder"></div>
+    <script>
+        fetch('navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar-placeholder').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading navbar:', error));
+    </script>
+
+
+    <!-- Main Content -->
+
+    <!-- Main Page -->    
+    <div class="container my-5">
+        <div class="row">
+        <!-- Recipe Content -->
+            <div class="col-md-8">
+            <h2>Ingredients</h2>
+            <ul>
+                <li>600 gr <strong>old fashioned</strong> oats</li>
+                <li>&frac12 cup (40 gr) coconut powder</li>
+                <li>&frac14 cup oil</li>
+                <li>&frac14 cup (35 gr) butter</li>
+                <li>&frac14 cup honey</li>
+                <li>&frac14 cup maple syrup</li>
+                <li>70 gr walnuts</li>            
+                <li>70 gr pecans</li>
+                <li>70 gr sliced almonds</li>
+           </ul>
+
+           <h2>Instructions</h2>
+           <ol>
+               <li>heat oven to 325&deg;F</li>
+               <li>in a pot melt butter with oil, honey and maple</li>
+               <li>in a big bowl mix oats and coconut</li>                
+               <li>pour oil/butter mixture on oats and mix well</li>
+               <li>spread on a baking tray and move to the middle rack of the oven</li>
+               <li>take out to mix every 5-7 minutes until the oats are golden and dry</li>
+               <li>break the walnuts and pecans into smaller bits and place in a baking tray</li>
+               <li>roast walnuts/pecan for ~10 minutes</li>
+               <li>add almonds and roast for an additional 5 minutes</li>
+               <li>let everything cool to room temp</li>
+               <li>mix and store in a dry place</li>
+           </ol>
+           <h2>Notes</h2>
+           <ul>
+               <li>you can switch the oil/butter to whatever oil type you like</li>
+               <li>you can switch the honey/maple to whatever sweetener you like</li>
+               <li>you can add raisins or dried cranberies at the end if you like (Elinor doesn't, so we don't)</li>
+               <li>sometimes I sprinkle &frac12 tsp vanilla extract at the end when I mix everything - totally optional</li>
+           </ul>
+       </div>
+       <!-- Images -->
+       <div class="col-md-4">
+           <img src="pictures/granola.jpg" alt="Granola" class="img-fluid mb-3" style="width: 100%;">
+       </div>
+   </div>
+</div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Assaf's Recipes. All rights reserved.</p>
+        <a href="index.html" class="text-white">Back to Home</a>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
