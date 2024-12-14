@@ -17,7 +17,7 @@
     </header>
 
     <!-- Navigation Bar -->
-    <div id="navbar-placeholder"></div>
+    <!--div id="navbar-placeholder"></div>
     <script>
         fetch('navbar.html')
             .then(response => response.text())
@@ -25,38 +25,55 @@
                 document.getElementById('navbar-placeholder').innerHTML = data;
             })
             .catch(error => console.error('Error loading navbar:', error));
-    </script>
+    </script-->
 
 
     <!-- Main Content -->
-    <div class="container my-5">
-        <h2 class="text-center mb-4">Featured Recipes</h2>
-        <div class="row">
-            <!-- Recipe Cards -->
-            <div class="col-md-6 mb-4">
+<div class="container my-5">
+    <h2 class="text-center mb-4">Recipe Categories</h2>
+    <div class="row">
+        <!-- Card 1 -->
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+            <a href="everyday.html" class="card-link">
                 <div class="card">
-                    <img src="pictures/Rakott_Kaposzta.jpg" class="card-img-top" alt="Rakott Káposzta">
+                    <h5 class="card-title">Everyday Staples</h5>
+                    <img src="pictures/everyday.webp" class="card-img-top" alt="Everyday staples">
                     <div class="card-body">
-                        <h5 class="card-title">Rakott Káposzta</h5>
-                        <p class="card-text">A Hungarian layered cabage recipe</p>
-                        <a href="Rakott_Káposzta.html" class="btn btn-primary">View Recipe</a>
+                        <p class="card-text text-center"></p>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-6 mb-4">
-                <div class="card">
-                    <img src="pictures/Mayonnaise.jpg" class="card-img-top" alt="Mayonnaise">
-                    <div class="card-body">
-                        <h5 class="card-title">Mayonnaise</h5>
-                        <p class="card-text">How to Make Basic Mayonnaise: A Staple Condiment Everyone Should Know</p>
-                        <a href="Mayonnaise.html" class="btn btn-primary">View Recipe</a>
-                    </div>
-                </div>
-            </div>
-
-            </div>
+            </a>
         </div>
+
+        <!-- Card 2 -->
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+            <a href="baking.html" class="card-link">
+                <div class="card">
+                    <h5 class="card-title">Baking</h5>
+                    <img src="pictures/baking.webp" class="card-img-top" alt="Baking">
+                    <div class="card-body">
+                        <p class="card-text text-center"></p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+            <a href="cocktails.html" class="card-link">
+                <div class="card">
+                    <h5 class="card-title">Cocktails</h5>
+                    <img src="pictures/cocktails.webp" class="card-img-top" alt="Cocktails">
+                    <div class="card-body">
+                        <p class="card-text text-center"></p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <!-- Add more cards as needed -->
     </div>
+</div>
 
     <!-- Footer -->
     <footer class="bg-dark text-white text-center py-3">
