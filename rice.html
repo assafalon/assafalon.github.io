@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Recipe for Classic Pancakes">
+    <title>Elinor's rice - Assaf's Recipes</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="bg-warning text-white text-center py-4">
+        <h1>Elinor's rice</h1>
+        <h1 lang="he" dir="rtl">האורז של אלינור</h1>
+    </header>
+    <!-- Navigation Bar -->
+    <div id="navbar-placeholder"></div>
+    <script>
+        fetch('navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar-placeholder').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading navbar:', error));
+    </script>
+
+
+    <!-- Main Content -->
+
+    <!-- Main Page -->    
+    <div class="container my-5">
+        <div class="row">
+        <!-- Recipe Content -->
+            <div class="col-md-4">
+            <h2>Ingredients</h2>
+            <ul>
+                <li>rice</li>
+                <li>salt</li>
+                <li>bay leaf</li>
+                <li>oil</li>
+                <li>water</li>
+           </ul>
+
+           <h2>Instructions</h2>
+           <p>The amount of rice is up to you. We make 1&frac12-2 cups of rice</p>
+           <p>The amount of salt is 1 tsp per cup of rice</p>
+           <p>The amount of water is equal to the amount of rice + &frac12 cup of water (for evaporation)</p>
+           <p>Elinor disagrees and will tell you that her grandmother used a finger to measure how much water to add</p>
+           <p>This is why this is affectionately called "Elinor's rice" but IRL it is how I make it</p> 
+           <ol>
+               <li>Coat the bottom of a pot with oil</li>
+               <li>Put salt and rice</li>
+               <li>Heat on high, mixing constantly so that the rice doesn't burn</li>                
+               <li>When the pot is hot, add water. They can be boiled ahead of time, or not</li>
+               <li>When the water boils add bay leaf, cover the pot, and reduce the heat to low</li>
+               <li>Cook for 14 minutes</li>
+               <li>Remove from heat and let sit, still covered, for an additional 5 minutes</li>
+               <li>Open the lid, remove bay leaf, and gently fluff the rice with a fork or a wooden spoon</li>
+               <li>Serve, or let cool to room temp and put in the refrigirator</li>
+           </ol>
+       </div>
+       <!-- Images -->
+       <div class="col-md-4">
+           <!--img src="pictures/granola.jpg" alt="Granola" class="img-fluid mb-3" style="width: 100%;"-->
+       </div>
+         <div lang="he" dir="rtl" class="col-md-4">
+            <h2>רכיבים</h2>
+            <ul>
+                <li>אורז</li>
+                <li>מלח</li>
+                <li>עלה דפנה</li>
+                <li>שמן</li>
+                <li>מים</li>
+           </ul>
+
+           <h2>הוראות</h2>
+           <p>תכינו כמה אורז שאתם רוצים במגבלות הסיר</p>
+           <p>כמות המלח זה כפית לכל כוס אורז</p>
+           <p>כמות המים זהה לכמות האורז פלוס עוד חצי כוס לפצות על ההתאדות</p>
+           <p>אלינור תספר לכם שסבתא שלה מדדה עם הזרת והוסיפה מים עד שהיה פרק אחד מעל האורז</p>
+           <p>זאת הסיבה שקוראים למתכון האורז של אלינור אבל במציאות אני מכין אותו 90% מהזמן</p>
+           
+           <ol>
+               <li>שמן בתחתית הסיר</li>
+               <li>תוסיפו אורז ומלח</li>
+               <li>תחממו את הסיר על אש גבוהה</li>                
+               <li>כשהסיר חם תוסיפו מים. אפשר להרתיח את המים מבעוד מועד, לא חובה</li>
+               <li>כשהמים רותחים מוסיפים את עלה הדפנה, מכסים ומורידים את האש לחום נמוך</li>
+               <li>מבשלים 14 דקות</li>
+               <li>מורידים מהאש ומחכים עוד חמש דקות במכסה מכוסה</li>
+               <li>אחרי חמש דקות מורידים את המכסה ומערבבים את האורז בעדינות</li>
+               <li>אפשר להגיש מיד או לכסות ולחכות שיתקרר ואז להעביר למקרר</li>
+           </ol>
+       </div>
+   </div>
+</div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Assaf's Recipes. All rights reserved.</p>
+        <a href="index.html" class="text-white">Back to Home</a>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
