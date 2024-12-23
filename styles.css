@@ -46,3 +46,47 @@ footer {
     padding: 10px 0;
     margin-top: 20px;
 }
+.card {
+    border: 1px solid #ddd; /* Optional: Add a subtle border to the card */
+    border-radius: 8px; /* Rounded corners for a cleaner look */
+    overflow: hidden; /* Prevent content from overflowing the card */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow */
+}
+
+.video-wrapper {
+    width: 100%; /* Ensure the video takes up the full width of the card */
+    padding-top: 56.25%; /* Maintain a 16:9 aspect ratio */
+    position: relative;
+    background: #000; /* Optional: Set a black background for the video area */
+}
+
+.card-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width of the wrapper */
+    height: 100%; /* Full height of the wrapper */
+    object-fit: cover; /* Ensure the video scales nicely */
+    border-radius: 8px; /* Match the card's border radius */
+}
+
+.card-title {
+    font-size: 1.25rem; /* Adjust title size for better aesthetics */
+}
+
+.card-text {
+    font-size: 0.9rem; /* Smaller font for description */
+    color: #666; /* Subtle text color for better readability */
+}
+.card-thumbnail img {
+    width: 100%; /* Make the thumbnail responsive */
+    height: auto;
+    border-radius: 8px; /* Optional: Rounded corners for the thumbnail */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow */
+}
+
+.card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Highlight card on hover */
+    transform: translateY(-3px); /* Subtle hover animation */
+    transition: all 0.2s ease-in-out;
+}

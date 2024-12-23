@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sourdough">
+    <title>Sourdough - Assaf's Recipes</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="bg-warning text-white text-center py-4">
+        <h1>Sourdough</h1>
+    </header>
+    <!-- Navigation Bar -->
+    <div id="navbar-placeholder"></div>
+    <script>
+        fetch('navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar-placeholder').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading navbar:', error));
+    </script>
+
+
+    <!-- Main Content -->
+
+    <!-- Main Page -->    
+
+<div class="container my-5">
+    <div class="row">
+
+
+<!-- Card 1 -->
+<div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+    <div class="card" data-bs-toggle="modal" data-bs-target="#sourdough_1" style="cursor: pointer;">
+        <div class="card-body text-center">
+            <h5 class="card-title">Feeding the starter</h5>
+            <div class="card-thumbnail">
+                <img src="thumbnails/sourdough_1.webp" class="img-fluid rounded" alt="Video thumbnail">
+            </div>
+            <p class="card-text mt-2">Do this on day 1, right before you go to sleep (Friday)</p>
+        </div>
+    </div>
+</div>
+
+
+<!-- Card 2 -->
+<div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+    <div class="card" data-bs-toggle="modal" data-bs-target="#sourdough_2" style="cursor: pointer;">
+        <div class="card-body text-center">
+            <h5 class="card-title">Autolyse</h5>
+            <div class="card-thumbnail">
+                <img src="thumbnails/sourdough_2.webp" class="img-fluid rounded" alt="Video thumbnail">
+            </div>
+            <p class="card-text mt-2">On day 2 (Saturday), mix 2.5% salt, 55% water, and 90% of your flour.<Br>Let rest for 20-30 mminutes. Check your starter</p>
+            
+        </div>
+    </div>
+</div>
+
+<!-- Card 3 -->
+<div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+    <div class="card" data-bs-toggle="modal" data-bs-target="#sourdough_3" style="cursor: pointer;">
+        <div class="card-body text-center">
+            <h5 class="card-title">Mixing the dough</h5>
+            <div class="card-thumbnail">
+                <img src="thumbnails/sourdough_3.webp" class="img-fluid rounded" alt="Video thumbnail">
+            </div>
+            <p class="card-text mt-2">After autolyse is done, mix in the starter</p>
+            
+        </div>
+    </div>
+</div>
+
+<!-- Card 4 -->
+<div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+    <div class="card" data-bs-toggle="modal" data-bs-target="#sourdough_4" style="cursor: pointer;">
+        <div class="card-body text-center">
+            <h5 class="card-title">Folding the dough</h5>
+            <div class="card-thumbnail">
+                <img src="thumbnails/sourdough_4.webp" class="img-fluid rounded" alt="Video thumbnail">
+            </div>
+            <p class="card-text mt-2">Every 20 minutes, fold the dough.<Br>Do this for 3-4 times, and then let the dough proof until it doubles in size</p>
+            
+        </div>
+    </div>
+</div>
+
+<!-- Card 5 -->
+<div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+    <div class="card" data-bs-toggle="modal" data-bs-target="#sourdough_5" style="cursor: pointer;">
+        <div class="card-body text-center">
+            <h5 class="card-title">Preshaping the dough</h5>
+            <div class="card-thumbnail">
+                <img src="thumbnails/sourdough_5.webp" class="img-fluid rounded" alt="Video thumbnail">
+            </div>
+            <p class="card-text mt-2">After the dough has doubled in size, divide it in two and preshape it.<Br>Let it rest on the counter, uncovered, for 20-30 minutes.</p>
+            
+        </div>
+    </div>
+</div>
+
+<!-- Card 6 -->
+<div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+    <div class="card" data-bs-toggle="modal" data-bs-target="#sourdough_6" style="cursor: pointer;">
+        <div class="card-body text-center">
+            <h5 class="card-title">Shaping the dough</h5>
+            <div class="card-thumbnail">
+                <img src="thumbnails/sourdough_6.webp" class="img-fluid rounded" alt="Video thumbnail">
+            </div>
+            <p class="card-text mt-2">After the dough is rested, we shape it into either boule or batard, depending on the banneton you have and then let it proof overnight in the refrigirator</p>
+            
+        </div>
+    </div>
+</div>
+
+        <!-- Add more cards as needed -->
+    </div>
+</div>
+
+<!-- Modals -->
+
+<!-- Modal 1 -->
+<div class="modal fade" id="sourdough_1" tabindex="-1" aria-labelledby="videoModal1Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="videoModal1Label">Feeding the starter</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="ratio ratio-16x9">
+                    <video controls>
+                        <source src="video/sourdough_1.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal 2 -->
+<div class="modal fade" id="sourdough_2" tabindex="-1" aria-labelledby="videoModal1Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="videoModal1Label">Autolyse</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="ratio ratio-16x9">
+                    <video controls>
+                        <source src="video/sourdough_2.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal 3 -->
+<div class="modal fade" id="sourdough_3" tabindex="-1" aria-labelledby="videoModal1Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="videoModal1Label">Mixing the dough</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="ratio ratio-16x9">
+                    <video controls>
+                        <source src="video/sourdough_3.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal 4 -->
+<div class="modal fade" id="sourdough_4" tabindex="-1" aria-labelledby="videoModal1Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="videoModal1Label">Folding the dough</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="ratio ratio-16x9">
+                    <video controls>
+                        <source src="video/sourdough_4.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal 5 -->
+<div class="modal fade" id="sourdough_5" tabindex="-1" aria-labelledby="videoModal1Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="videoModal1Label">Preshaping the dough</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="ratio ratio-16x9">
+                    <video controls>
+                        <source src="video/sourdough_5.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal 6 -->
+<div class="modal fade" id="sourdough_6" tabindex="-1" aria-labelledby="videoModal1Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="videoModal1Label">Shaping the dough</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="ratio ratio-16x9">
+                    <video controls>
+                        <source src="video/sourdough_6.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Assaf's Recipes. All rights reserved.</p>
+        <a href="index.html" class="text-white">Back to Home</a>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/modal-control.js"></script>
+</body>
+</html>
