@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tomato soup">
+    <title>Tomato soup - Assaf's Recipes</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="bg-warning text-white text-center py-4">
+        <h1>Tomato soup</h1>
+        <h1 lang="he" dir="rtl">מרק עגבניות בנזונה של הללי</h1>
+    </header>
+    <!-- Navigation Bar -->
+    <div id="navbar-placeholder"></div>
+    <script>
+        fetch('navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar-placeholder').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading navbar:', error));
+    </script>
+
+
+    <!-- Main Content -->
+
+    <!-- Main Page -->    
+    <div class="container my-5">
+        <div class="row">
+        <!-- Recipe Content -->
+            <div class="col-md-4">
+            <h2>Ingredients</h2>
+            <ul>
+
+                <li>3 tbsp olive oil</li>
+                <li>1 large onion - chopped</li>
+                <li>3 cloves of garlic - minced</li>
+                <li>1 large can of crushed tomatos (800 gr)</li>
+                <li>6 cups of water/stock</li>
+                <li>&frac34 cup white wine</li>
+                <li>&frac12 cup white rice</li>
+                <li>2 tbsp lemon juice (&frac12 a lemon)</li>
+                <li>1 tbsp sugar</li>
+                <li>&frac12 cup heavy or light cream</li>            
+           </ul>
+           <h2>Instructions</h2>
+           <ol>
+               <li>Saut&eacute; onion and garlic in olive oil until softened</li>
+               <li>Add wine, water, tomatos and bring to a simmer over medium heat</li>
+               <li>Add rice, stir well, bring back to simmer, lower heat to low, and cook for 45 minutes</li>                
+               <li>Off heat, add sugar, lemon juice, salt and pepper to taste</li>
+               <li>After the soup has cooled slightly, add cream gently, while stirring</li>
+               <li>To serve you can add basil and parsley</li>
+           </ol>
+       </div>
+       <!-- Images -->
+       <div class="col-md-4">
+           <img src="pictures/soups.webp" alt="soups" class="img-fluid mb-3" style="width: 100%;">
+       </div>
+         <div lang="he" dir="rtl" class="col-md-4">
+            <h2>רכיבים</h2>
+            <ul>
+                <li>3 כפות שמן זית</li>
+                <li>בצל גדול קצוץ</li>
+                <li>3 שיני שום קצוצות</li>
+                <li>פחית גדולה של עגבניות מרוסקות (800 גרם)</li>
+                <li>6 כוסות מים או ציר</li>
+                <li>&frac34 כוס יין לבן</li>
+                <li>&frac12 כוס אורז</li>            
+                <li>2 כפות מיץ לימון (חצי לימון סחוט)</li>
+                <li>1 כף סוכר</li>
+                <li>&frac12 כוס שמנת מתוקה</li>
+           </ul>
+
+           <h2>הוראות</h2>
+           <ol>
+               <li>מחממים את השמן בסיר, מוסיפים את הבצל והשום ומטגנים עד שהבצל מתרכך</li>
+               <li>מוסיפים את רסק העגבניות, מרק, יין ומים. מביאים לרתיחה</li>
+               <li>מוסיפים את האורז, מעבירים לאש קטנה ומבשלים כ- 45 דקות</li>                
+               <li>מורידים מהאש, מוסיפים מלח, פלפל, לימון וסוכר</li>
+               <li>אחרי שמתקרר קצת מוסיפים את השמנת תוך כדי בחישה</li>
+               <li>להגשה אפשר להוסיף בזיליקום ופטרוזיליה</li>
+           </ol>
+       </div>
+   </div>
+</div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Assaf's Recipes. All rights reserved.</p>
+        <a href="index.html" class="text-white">Back to Home</a>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
