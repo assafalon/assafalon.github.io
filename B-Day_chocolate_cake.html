@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Recipe for chocolate cake">
+    <title>Birthday chocolate cake - Assaf's Recipes</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="bg-warning text-white text-center py-4">
+        <h1>Birthday chocolate cake</h1>
+    </header>
+    <!-- Navigation Bar -->
+    <div id="navbar-placeholder"></div>
+    <script>
+        fetch('navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar-placeholder').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading navbar:', error));
+    </script>
+
+
+    <!-- Main Content -->
+
+    <!-- Main Page -->    
+    <div class="container my-5">
+        <div class="row">
+        <!-- Recipe Content -->
+            <div class="col-md-8">
+            <p>Makes a double layered 10" cake</p>
+            <h2>Ingredients</h2>
+            <p><strong>Wet ingredients:</strong></p>
+            <ul>
+                <li>130 gr (1.125 cup) nesquick chocolate powder</li>
+                <li>40 gr (0.375 cup) cocoa powder</li>
+                <li>1.5 tsp instant coffee</li>
+                <li>&frac34 cup of boiling water</li>
+                <li>2&frac14 cups water</li>
+                <li>450 gr (2&frac14 cup) sugar </li>
+                <li>1&frac12 cups of oil (canola)</li>
+                <li>3 eggs</li>
+                <li>1&frac12 tsp vanila</li>
+            </ul>
+            <p><strong>Dry ingredients:</strong></p>
+            <ul>
+                <li>3 cups flour</li>
+                <li>1&frac12 tbsp baking powder</li>
+                <li>&frac34 tsp salt</li>
+           </ul>
+           <h2>Instructions</h2>
+           <ol>
+               <li>Heat oven to 350&deg;F</li>
+               <li>Grease two 10" cake pans</li>                
+               <li>In a heat-proof bowl mix nesquick powder, cocoa powder, instant coffee</li>
+               <li>Add boiling water and mix until all is dissolved</li>
+               <li>Add remaining wet ingredients: water, sugar, oil, eggs, and vanila (I like to beat the eggs and add the oil to creat an emulssion, totally optional)</li>
+               <li>Mix dry ingredients and then combine with the wet ingredients</li>
+               <li>Evenly distribute the mix between two 10" cake pans, making sure not to fill more than half the height of the pan</li>
+               <li>Bake for about 30 minutes, or until tester comes out dry</li>
+               <li>Let cool to room temp, assemble, and decorate</li>
+           </ol>
+       </div>
+       <!-- Images -->
+       <div class="col-md-4">
+           <img src="pictures/chocolate_cake.jpg" alt="Chocolate cake" class="img-fluid mb-3" style="width: 100%;">
+       </div>
+   </div>
+</div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Assaf's Recipes. All rights reserved.</p>
+        <a href="index.html" class="text-white">Back to Home</a>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
