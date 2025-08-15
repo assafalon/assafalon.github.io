@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tarator soup">
+    <title>Tarator soup - Assaf's Recipes</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="bg-warning text-white text-center py-4">
+        <h1>Tarator soup</h1>
+        <h1 lang="he" dir="rtl">מרק טרטור של סבא אריה</h1>
+    </header>
+    <!-- Navigation Bar -->
+    <div id="navbar-placeholder"></div>
+    <script>
+        fetch('navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar-placeholder').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading navbar:', error));
+    </script>
+
+
+    <!-- Main Content -->
+
+    <!-- Main Page -->    
+    <div class="container my-5">
+        <div class="row">
+        <!-- Recipe Content -->
+            <div class="col-md-4">
+            <h2>Ingredients</h2>
+            <ul>
+                <li>1 qt buttermilk</li>
+                <li>3-4 large cucumbers - diced</li>
+                <li>3-4 pickles in brine - diced</li>
+                <li>3 cloves of garlic - minced</li>
+                <li>a lot of dill - chopped</li>
+                <li>3 tbsp olive oil</li>
+                <li>Salt and pepper</li>            
+           </ul>
+           <h2>Instructions</h2>
+           <ol>
+               <li>Dice, mince, chop all ingrediants</li>
+               <li>Mix together with the buttermilk in a small pot</li>
+               <li>Refrigirate O/N</li>                
+               <li>Enjoy</li>
+           </ol>
+       </div>
+       <!-- Images -->
+       <div class="col-md-4">
+           <img src="../pictures/tarator.jpg" alt="tarator" class="img-fluid mb-3" style="width: 100%;">
+       </div>
+         <div lang="he" dir="rtl" class="col-md-4">
+            <h2>רכיבים</h2>
+            <ul>
+                <li>1 ליטר רוויון</li>
+                <li>3-4 מלפפונים גדולים חתוכים לקוביות</li>
+                <li>3-4 מלפפונים חמוצים במלח קצוצים לקוביות</li>
+                <li>3 שיני שום קצוצות</li>
+                <li>חופן שמיר קצוץ</li>
+                <li>3 כפות שמן זית</li>
+                <li>מלח ופלפל</li>            
+           </ul>
+           <h2>הוראות</h2>
+           <ol>
+               <li>לקצוץ את כל הרכיבים לתוך סיר קטן</li>
+               <li>להוסיף את הרוויון ולערבב</li>
+               <li>להעביר למקרר ולתת למרק לשכב לילה לערבוב הטעמים</li>                
+               <li>לאכול בהנאה ביום קיץ חם</li>
+           </ol>
+       </div>
+   </div>
+</div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Assaf's Recipes. All rights reserved.</p>
+        <a href="index.html" class="text-white">Back to Home</a>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
