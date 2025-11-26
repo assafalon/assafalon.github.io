@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html  lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Recipe for Rakott_Káposzta">
+    <title>Yam casserole - Assaf's Recipes</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="bg-warning text-white text-center py-4">
+        <h1>Yam casserole</h1>
+    </header>
+    <!-- Navigation Bar -->
+    <div id="navbar-placeholder"></div>
+    <script>
+        fetch('navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar-placeholder').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading navbar:', error));
+    </script>
+
+
+    <!-- Main Content -->
+
+    <!-- Main Page -->
+    <div class="container my-5">
+        <div class="row">
+
+    <!-- Recipe Content -->
+    <div class="col-md-8">
+        <h2>Ingredients:</h2>
+        <ul>
+            <li>3-5 yams or sweet potatos - peeled and sliced</li>
+            <li>1&frac12 sticks of butter (170 gr)</li>
+            <li>&frac12 cup of white sugar</li>
+            <li>&frac12 cup of brown sugar</li>
+            <li>2 tsp cinnamon</li>
+            <li>&frac12 tsp nutmeg</li>
+            <li>&frac12 tsp cayenne pepper (optional)</li>
+            <li>500 gr ricotta</li>
+            <li>&frac12 cup roasted pecans</li>
+            <li>honey</li>
+            <li>raisins soaks in whiskey</li>
+        </ul>
+
+        <h2>Instructions:</h2>
+        <ol>
+            <li>heat oven to 350&deg;F</li>
+            <li>mix butter and spices in a bowl</li>
+            <li>mix butter mixture with yam slices in a casserole dish</li>
+            <li>cover and bake for ~30 minutes</li>
+            <li>remove cover, mix, and bake for an additional 15-30 minutes, until soft</li>
+            <li>add ricotta, pecans, rasins</li>
+            <li>drizzle with honey</li>
+        </ol>
+        
+    </div>
+<!-- Images -->
+   <div class="col-md-4">
+       <img src="pictures/Yam_casserole.jpg" alt="Yam casserole" class="img-fluid mb-3" style="width: 100%;">
+       
+   </div>
+
+</div>
+</div>
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Assaf's Recipes. All rights reserved.</p>
+        <a href="index.html" class="text-white">Back to Home</a>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
