@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html  lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Recipe for spinach and ricotta lasagna">
+    <title>Spinach and ricotta lasagna - Assaf's Recipes</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="bg-warning text-white text-center py-4">
+        <h1>Spinach and ricotta lasagna</h1>
+    </header>
+    <!-- Navigation Bar -->
+    <div id="navbar-placeholder"></div>
+    <script>
+        fetch('navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar-placeholder').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading navbar:', error));
+    </script>
+
+
+    <!-- Main Content -->
+
+    <!-- Main Page -->
+    <div class="container my-5">
+        <div class="row">
+
+    <!-- Recipe Content -->
+    <div class="col-md-8">
+        <h2>Ingredients:</h2>
+        <ul>
+            <li>One jar of marinara sauce (26 ounce / 750 gr)</li>
+            <li>A box of lasagna noodles</li>
+            <li>2 eggs, lightly beaten</li>
+            <li>1 lb ricotta cheese</li>
+            <li>2 tsp cinnamon</li>
+            <li>1 bag of Spinach, either frozen, thawed and squeezed, or fresh and wilted in a pan</li>
+            <li>1 lb shredded mozzarella</li>
+            <li>&frac34 cup Parmesan cheese</li>
+            <li>1 tsp oregano</li>
+            <li>1 tsp salt</li>
+            <li>&frac14 tsp pepper</li>
+        </ul>
+
+        <h2>Instructions:</h2>
+        <ol>
+            <li>Heat oven to 400&deg;F</li>
+            <li>In a bowl mix:</li>
+            <ul>
+                <li>Eggs</li>
+                <li>Ricotta cheese</li>
+                <li>Spinach</li>
+                <li>&frac12 Cup of the parmesan cheese</li>
+                <li>Oregano, salt, and pepper</li>
+            </ul>
+            <li>Cover the bottom of a pan with sauce</li>
+            <li>Layer 1 and 2:</li>
+            <ul>
+                <li>Lasagna noodles</li>
+                <li>Sauce</li>
+                <li>&frac12 of the ricotta-spinach mix</li>
+                <li>Mozzarella</li>
+            </ul>
+            <li>Top with lasagna noodles, sauce, mozzarella, and the remaining parmesan</li>
+            <li>Cover with aluminum foil and bake for 20 minutes</li>
+            <li>Remove cover and bake for additional 15 minutes</li>
+        </ol>
+        
+    </div>
+<!-- Images -->
+   <div class="col-md-4">
+       <!--img src="pictures/Yam_casserole.jpg" alt="Yam casserole" class="img-fluid mb-3" style="width: 100%;"-->
+       
+   </div>
+
+</div>
+</div>
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Assaf's Recipes. All rights reserved.</p>
+        <a href="index.html" class="text-white">Back to Home</a>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
